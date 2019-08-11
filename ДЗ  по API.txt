@@ -1,0 +1,18 @@
+1. GET запрос - https://swapi.co/api/people/4/
+2. POST запрос - http://31.220.42.115:3000/orders/populate
+	во вкладке "Headers" вставляем в "KEY" прописиваем "Cookie" в "value" вставляем Cookie скопированные с браузера в моем случае guest_token=IjNFRW9aR1hsOEFOWW5iZS1fazZTN3cxNTY1NTIwODE2OTI1Ig%3D%3D--ec79cf11dffb3cad29e0488d984e29766a8d756d; __profilin=p%3Dt; _sandbox_session=8scorzDMICFUDxAKK0qt%2FVmyQYCxpdY7oXWXMe8DgeVXtz%2BL%2FT8e5hhJv6e1RnHc9G7bJfqPla5eZbxZi2hKomtpZdyLofM8VVdGbZSupfQ5cHk1dUn5UWlIzuhsiRbwJInsYknydXnWd6oSYP0%3D--QeIXhWKQ0W1RwInk--1gN7M%2FxpF1DlaAJfhYXCFQ%3D%3D
+	во вкладке "Boby" в разделе "raw" прописываем
+{
+	"variant_id": "6",
+"quantity": 1
+}
+	выбыраем тип запроса "JASON"
+3. PUT запрос - http://31.220.42.115:3000/cart/empty
+	во вкладке "Headers" вставляем в "KEY" прописиваем "Cookie" в "value" вставляем Cookie скопированные с браузера в моем случае guest_token=IjNFRW9aR1hsOEFOWW5iZS1fazZTN3cxNTY1NTIwODE2OTI1Ig%3D%3D--ec79cf11dffb3cad29e0488d984e29766a8d756d; __profilin=p%3Dt; _sandbox_session=29%2BYpeW1mNwtgHGDr%2FP6qtp%2BxppFk%2BC%2Fh7jlzG7dEcXRFE%2BFtNy10KqBT6%2F13f465cON0UNh6j0j1%2BgKFbUx%2BzbMCGItxM5885IuJLEn142vmGhpPC73c3T97jm1dXGc1ZDH%2F3ngZsPPwYmcSR0%3D--JOwT4PZwLZy6qygy--hMvFUv9weHacnaR3xJ5Vqg%3D%3D
+	во вкладке "Boby" в разделе "raw" прописываем
+{
+"_method": "put",
+"authenticity_token": "QrVY13dHhAFdvPh7Lpii9Awu+yeaSA+5sC62efCVBAUeD+cmGdU6FO2g3tXmownXuMoCABPkqcfWMNrr35BdQw==",
+"commit": "Empty Cart"
+}
+	выбыраем тип запроса "JASON"
